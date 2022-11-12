@@ -86,6 +86,10 @@ ul {
     margin: 5px;
 }
 
+.card img {
+    border-radius: 5px;
+}
+
 /* add a shadow when the mouse hovers over the card */
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(255, 156, 51, 0.892);

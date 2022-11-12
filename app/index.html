@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Ovo Frito</title>
+    <!-- favicon -->
+    <link rel="icon" href="./icon/icons8-sunny-side-up-eggs-16.png" type="image/png">
+
+    <!-- css style.css -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- javascript -->
+    <script src="./index.js" type="module" defer></script>
+    <script src="./modules/f-getDateTime.js" type="module"></script>
+    <script src="./modules/f-constructorCard.js" type="module"></script>
+    <script src="./modules/o-dadosCards.js" type="module"></script>
+
+    
+    
+</head>
+<body>
+    <!-- a container placing nav as column to the left and main to the left -->
+    <div class="container">
+        <!-- nav -->
+        <nav>
+            <!-- form with 4 elements to create a card: title, description, image url and a send button -->
+            <form id="form">
+                <input type="text" id="title" placeholder="Title">
+                <input type="text" id="description" placeholder="Description">
+                <input type="text" id="image" placeholder="Image URL">
+                <button type="submit">Send</button>
+            </form>
+        </nav>
+        <!-- main -->
+        <main>
+            <!-- container for cards -->
+            <section id="cards">
+                <ul id="cards-ulist"> 
+                    <!-- card example -->
+                    <li class="card" id="card-0000">
+                        <img class="card-image" src="./icon/icons8-sunny-side-up-eggs-16.png" alt="image">
+                        <h2 class="card-title">Title: card-0000</h2>
+                        <p class="card-description">Description: Este é um card de exemplo para ser clonado</p>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    
+</body>
+</html>

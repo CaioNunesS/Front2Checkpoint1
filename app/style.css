@@ -1,0 +1,97 @@
+/* css to format the page */
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    margin: 10;
+    padding: 20;
+    /* viewport size */
+    width: 90vw;
+    height: 90vh;
+    display: grid;
+
+}
+
+/* organize the page as a 2 column grid layout */
+.container {
+    display: grid;
+    /* viewport size */
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "nav main";
+    grid-gap: 10px;
+    background-color: #ecb235;
+    padding: 10px;
+    /* make column 1 30% of the container size */
+    grid-template-columns: 30% 1fr;
+}
+
+/* place nav as a column on the left */
+nav {
+    grid-area: nav;
+    background-color: #d28417;
+    padding: 10px;
+    /* center elements */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input {
+    margin-top: 5px;
+    display: block;
+}
+
+form button {
+    margin-top: 5px;
+}
+
+/* place main as a column on the right */
+main {
+    grid-area: main;
+    background-color: #fffcfc;
+}
+
+section {
+    background-color: #fff;
+    padding: 10px;
+    /* margin: 10px; */
+    /* center */
+    text-align: center;
+    justify-content: center;
+}
+
+/* ul without marker */
+ul {
+    list-style-type: none;
+    display: grid;
+    justify-content: center;
+    /* align-items: center; */
+    /* gap between li */
+    padding: 0;
+    gap: 10px;
+}
+
+/* class format card */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+
+    background-color: lightgray;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* add a shadow when the mouse hovers over the card */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(255, 156, 51, 0.892);
+}
+
+/* make list with 2 columns  */
+
+
+

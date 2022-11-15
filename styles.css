@@ -103,7 +103,7 @@ body {
   font-weight: bold;
   border-color: black;
   border-width: 2px;
-  background-color: rgba(238, 139, 11, 0.918);
+  background-color: #ee8b0bea;
   color: black;
   opacity: 0.6;
   z-index: 1;
@@ -127,6 +127,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 40px;
 }
 
 /* #card{display: none;} */

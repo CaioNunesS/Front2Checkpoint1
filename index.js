@@ -51,7 +51,7 @@ function clearInput() {
 /////////////////////////////////// VALIDAÇÃO DE FORMULÁRIO ///////////////////////////////////////
 
 let titulo = document.querySelector("#titulo");
-let urlimagem = document.querySelector("#urlimagem");
+let urlimagem = document.querySelector("#urlImagem");
 let descricao = document.querySelector("#descricao");
 
 // create object validation
@@ -77,22 +77,22 @@ let validation = {
 titulo.addEventListener("focus", function(event) {
     console.log("focus on input titulo");
     titulo.style.backgroundColor = "lightred";
-    titulo.style.border = "5px solid red";
+    titulo.style.border = "4px solid red";
 });
 // addEventListener for live validation of input - titulo
 titulo.addEventListener("keyup", function(event) {
     console.log("keyup on input titulo");
     if (titulo.value.length <= 4) {
         titulo.style.backgroundColor = "red";
-        titulo.style.border = "5px solid red";
+        titulo.style.border = "4px solid red";
         validation.titulo = false;
     } else {
         titulo.style.backgroundColor = "lightgreen";
-        titulo.style.border = "5px solid green";
+        titulo.style.border = "4px solid green";
         validation.titulo = true;
         if (validation.check()) {
             btnEnviar.disabled = false;
-            btnEnviar.style.border = "5px solid green";
+            btnEnviar.style.border = "4px solid green";
             btnEnviar.style.backgroundColor = "#ee8b0bea";
         }
     }
@@ -102,22 +102,22 @@ titulo.addEventListener("keyup", function(event) {
 descricao.addEventListener("focus", function(event) {
     console.log("focus on input descricao");
     descricao.style.backgroundColor = "lightred";
-    descricao.style.border = "5px solid red";
+    descricao.style.border = "4px solid red";
 });
 // addEventListener for live validation of input - descricao
 descricao.addEventListener("keyup", function(event) {
     console.log("keyup on input descricao");
     if (descricao.value.length <= 4) {
         descricao.style.backgroundColor = "red";
-        descricao.style.border = "5px solid red";
+        descricao.style.border = "4px solid red";
         validation.descricao = false;
     } else {
         descricao.style.backgroundColor = "lightgreen";
-        descricao.style.border = "5px solid green";
+        descricao.style.border = "4px solid green";
         validation.descricao = true;
         if (validation.check()) {
             btnEnviar.disabled = false;
-            btnEnviar.style.border = "5px solid green";
+            btnEnviar.style.border = "4px solid green";
             btnEnviar.style.backgroundColor = "#ee8b0bea";
         }
     }
@@ -127,22 +127,22 @@ descricao.addEventListener("keyup", function(event) {
 urlimagem.addEventListener("focus", function(event) {
     console.log("focus on input urlimagem");
     urlimagem.style.backgroundColor = "lightred";
-    urlimagem.style.border = "5px solid red";
+    urlimagem.style.border = "4px solid red";
 });
 // addEventListener for live validation of input - urlimagem
 urlimagem.addEventListener("keyup", function(event) {
     console.log("keyup on input urlimagem");
     if (urlimagem.value.length <= 4) {
         urlimagem.style.backgroundColor = "red";
-        urlimagem.style.border = "5px solid red";
+        urlimagem.style.border = "4px solid red";
         validation.urlimagem = false;
     } else {
         urlimagem.style.backgroundColor = "lightgreen";
-        urlimagem.style.border = "5px solid green";
+        urlimagem.style.border = "4px solid green";
         validation.urlimagem = true;
         if (validation.check()) {
             btnEnviar.disabled = false;
-            btnEnviar.style.border = "5px solid green";
+            btnEnviar.style.border = "4px solid green";
             btnEnviar.style.backgroundColor = "#ee8b0bea";
         }
     }
@@ -153,10 +153,10 @@ btnEnviar.addEventListener("mouseover", function(event) {
     console.log("mouseover on btnEnviar");
     if (validation.check()) {
         btnEnviar.disabled = false;
-        btnEnviar.style.border = "5px solid green";
+        btnEnviar.style.border = "4px solid green";
     } else {
         btnEnviar.disabled = true;
-        btnEnviar.style.border = "5px solid red";
+        btnEnviar.style.border = "4px solid red";
         btnEnviar.style.backgroundColor = "lightgrey";
     }
 });
@@ -186,27 +186,3 @@ btnEnviar.addEventListener("click", function(event) {
         alert("Preencha todos os campos!");
     }
 });
-
- 
-
-
-
-
-////////// dados de teste //////////
-
-// // insert date in the input descricao
-// let data = new Date();
-// let dia = data.getDate();
-// let mes = data.getMonth() + 1;
-// let ano = data.getFullYear();
-// let dataAtual = dia + "/" + mes + "/" + ano;
-// descricao.value = dataAtual;
-
-// // insert text example in the input titulo
-// let tituloExemplo = "Exemplo: Bolo de cenoura";
-// titulo.value = tituloExemplo;
-
-// // insert image link example in the input urlimagem
-// let urlExemplo = "https://media.istockphoto.com/id/1313708601/pt/foto/carrot-cake-with-chocolate-icing-brazilian-cake.jpg?s=612x612&w=0&k=20&c=XoZZgYXNyEcoKkY0hAEzcOYT3wqlAm5rCCK_9qV1naQ=";
-// urlimagem.value = urlExemplo;
-

@@ -95,7 +95,36 @@ ul {
     box-shadow: 0 8px 16px 0 rgba(255, 156, 51, 0.892);
 }
 
-/* make list with 2 columns  */
+
+/* make list with 3 columns when vw is greater than 850px */
+@media screen and (min-width: 850px) {
+    ul {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* make list with 2 columns when vw is less than 850px */
+@media screen and (max-width: 850px) {
+    ul {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* make list with 1 column when vw is less than 600px */
+@media screen and (max-width: 600px) {
+    ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* resize image to fit */
+img {
+    width: 100%;
+    height: auto;
+}
+
 
 
 
